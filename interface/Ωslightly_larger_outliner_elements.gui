@@ -1,0 +1,275 @@
+guiTypes = {
+
+    ##################
+    ### WAR ICONS! ###
+    ##################
+
+    containerWindowType = {
+		name = "waroverview_list"
+		position = { x = 0 y = 48 }
+		size = { width = 80 height = 100 }
+		moveable = no
+		orientation = upper_right
+
+		OverlappingElementsBoxType = {
+			name = "box"
+			position = { x = -860 y = 35 }
+			size = { x = 445 y = 100 }
+			format = right
+			spacing = 10
+		}
+	}
+
+    #################
+    ### OUTLINER! ###
+    #################
+
+    positionType = {
+		name = "outliner_window_margin"
+		position = { x = 0 y = 118 } # limit the outliner tab window to 700px
+	}
+
+    containerWindowType = {
+		name = "tabs_outliner_window"
+		size = { width = 260 height = 50 }
+		position = { x = -260 y = 64 }
+		show_position = { x = -260 y = 64 }
+		hide_position = { x = 0 y = 64 }
+		animation_time = 200
+		animation_type = decelerated
+		orientation = upper_right
+		moveable = no
+
+		gridBoxType = {
+			name = "tabs_gridbox"
+			position = { x = 0 y = 0 }
+			size = { width = 260 height = 40 }
+			slotSize = { width = 46 height = 27 }
+			max_slots_horizontal = 4
+			format = "UPPER_LEFT"
+		}
+	}
+
+    containerWindowType = {
+		name = "outliner_tab_window"
+		size = { width = 260 height = 0 }
+		position = { x = -260 y = 91 }
+		show_position = { x = -260 y = 91 }
+		hide_position = { x = 0 y = 91 }
+		animation_time = 200
+		animation_type = decelerated
+		orientation = upper_right
+		moveable = no
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tile_outliner_bg"
+		}
+
+		iconType = {
+			name = "title_hex"
+			quadTextureSprite = "GFX_hex_bg"
+			position = { x = -17 y = -14 }
+		}
+
+		iconType = {
+			name = "title_line"
+			quadTextureSprite = "GFX_line_short"
+			position = { x = 0 y = 21 }
+		}
+
+		instantTextBoxType = {
+			name = "tab_name"
+			font = "malgun_goth_24"
+			text = "Outliner"
+			position = { x = 13 y = 5 }
+			maxWidth = 150
+			maxHeight = 20
+			fixedSize = yes
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+
+		buttonType = {
+			name = "options"
+			quadTextureSprite = "GFX_outliner_options_button"
+			position = { x= -31 y = 13  }
+			pdx_tooltip = "OUTLINER_OPTIONS_TOOLTIP"
+			orientation = "UPPER_RIGHT"
+			oversound = "no_sound"
+			clicksound = "click_outliner"
+		}
+
+		buttonType = {
+			name = "rearrange"
+			quadTextureSprite = "GFX_button_sort_reorder_planets"
+			size = { x = 20 y = 20 }
+			position = { x= -60 y = 12  }
+			pdx_tooltip = "OUTLINER_REARRANGE_TOOLTIP"
+			orientation = "UPPER_RIGHT"
+			oversound = "no_sound"
+			clicksound = "click_outliner"
+		}
+
+		smoothListBoxType = {
+			name = "list"
+			position = { x = 2 y= 40 }
+			orientation = "UPPER_LEFT"
+			priority = 100
+			size = { x = 240 y = 0 }
+			borderSize = { x=0 y=0 }
+			scrollbartype = "standardlistbox_slider"
+			spacing = -1
+			defaultSelection = yes
+		}
+	}
+
+    containerWindowType = {
+		name = "tabs_outliner_window"
+		size = { width = 260 height = 50 }
+		position = { x = -260 y = 64 }
+		show_position = { x = -260 y = 64 }
+		hide_position = { x = 0 y = 64 }
+		animation_time = 200
+		animation_type = decelerated
+		orientation = upper_right
+		moveable = no
+
+		gridBoxType = {
+			name = "tabs_gridbox"
+			position = { x = 0 y = 0 }
+			size = { width = 260 height = 40 }
+			slotSize = { width = 46 height = 27 }
+			max_slots_horizontal = 4
+			format = "UPPER_LEFT"
+		}
+	}
+
+    containerWindowType = {
+		name = "outliner_controller_window"
+		size = { width = 260 height = 100 }
+		position = { x = -260 y = 55 }
+		orientation = upper_right
+		moveable = yes
+
+		containerWindowType = {
+			name = "outliner_toggle_window"
+			size = { width = 32 height = 32 }
+			position = { x = 0 y = 0 }
+			show_position = { x = -65 y = 0 }
+			hide_position = { x = 100 y = 0 }
+			animation_time = 500
+			animation_type = decelerated
+			orientation = upper_right
+			moveable = no
+
+			buttonType = {
+				name = "tabbed_outliner_toggle"
+				quadTextureSprite = "outliner_button"
+				position = { x = 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				shortcut = "o"
+				clicksound = interface
+				oversound = mouse_over
+			}
+
+			buttonType = {
+				name = "observer_outliner_toggle"
+				quadTextureSprite = "observer_outliner_button"
+				position = { x = 0 y = -40 }
+				Orientation = "UPPER_LEFT"
+				#shortcut = "o"
+				clicksound = interface
+				oversound = mouse_over
+			}
+		}
+	}
+
+    ########################
+    ### FEDERATION ICON! ###
+    ########################
+
+    containerWindowType = {
+		name = "alliance_button_window"
+		position = { x=-409 y=49 }
+		size = { width=67 height=67}
+		orientation = upper_right
+		moveable = no
+
+		buttonType = {
+			name = "federation_button"
+			spriteType = "GFX_at_federation_with_bg"
+			position = { x= 0 y = 0 }
+			orientation = center
+			centerPosition = yes
+		}
+	}
+
+    #####################
+    ### GALACOM ICON! ###
+    #####################
+
+    containerWindowType = {
+		name = "galactic_community_button_window"
+		position = { x=-338 y=48 }
+		orientation = upper_right
+
+		buttonType = {
+			name = "galactic_community_button"
+			spriteType = "GFX_galactic_community_button"
+			position = { x= 0 y = 0 }
+		}
+
+		iconType = {
+			name = "unread_proposals_icon"
+			spriteType = "GFX_unread_bg"
+			position = { x= -6 y = -6 }
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "unread_proposals_text"
+			font = "cg_16b"
+			maxWidth = 30
+			maxHeight = 20
+			position = { x= -4 y = 3 }
+			format = center
+			text = "20"
+		}
+
+		instantTextBoxType = {
+			name = "days_until_vote_text"
+			font = "cg_16b"
+			maxWidth = 30
+			maxHeight = 20
+			position = { x= 18 y = 40 }
+			format = center
+			text = "20"
+		}
+
+		### The visibility needs to be set by this in Code, like the other elements
+		iconType = {
+			name = "vote_balance_progressbar_bg"
+			spriteType = "GFX_vote_balance_supporting_bg"
+			position = { x= 3 y = 55 }
+		}
+
+		iconType = {
+			name = "vote_balance_supporting_dot"
+			spriteType = "GFX_vote_balance_supporting_dot"
+			position = { x= 7 y = 58 }
+		}
+
+		iconType = {
+			name = "vote_balance_opposing_dot"
+			spriteType = "GFX_vote_balance_opposing_dot"
+			position = { x= 51 y = 59 }
+		}
+
+		iconType = {
+			name = "vote_balance_progressbar"
+			spriteType = "GFX_vote_balance_small_progressbar"
+			position = { x= 17 y = 61 }
+		}
+	}
+}
