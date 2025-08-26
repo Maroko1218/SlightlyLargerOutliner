@@ -5,7 +5,7 @@ guiTypes = {
 	### OUTLINER ###
 	positionType = {
 		name = "outliner_window_margin"
-		position = { x = 0 y = 150 } # limit the outliner tab window to 700px
+		position = { x = 0 y = 118 } # limit the outliner tab window to 700px
 	}
 
 	positionType = {
@@ -139,7 +139,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "outliner_tab_window"
-		size = { width = 260 height = 20 }
+		size = { width = 260 height = 0 }
 		position = { x = -260 y = 91 }
 		show_position = { x = -260 y = 91 }
 		hide_position = { x = 0 y = 91 }

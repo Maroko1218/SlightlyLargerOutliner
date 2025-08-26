@@ -2,17 +2,17 @@ guiTypes = {
 	# Box which holds all small icons, one for each war
 	containerWindowType = {
 		name = "waroverview_list"
-		position = { x = 0 y = -80 }
+		position = { x = 0 y = -48 }
 		size = { width = 80 height = 100 }
 		moveable = no
 		orientation = lower_right
 
 		OverlappingElementsBoxType = {
 			name = "box"
-			position = { x = -450 y = -30 }
-			size = { x = 245 y = 100 }
+			position = { x = -656 y = -30 }
+			size = { x = 445 y = 100 }
 			format = right
-			spacing = -5
+			spacing = 10
 		}
 	}
 
