@@ -6,14 +6,14 @@ guiTypes = {
 
     containerWindowType = {
 		name = "waroverview_list"
-		position = { x = 0 y = 48 }
+		position = { x = 0 y = -48 }
 		size = { width = 80 height = 100 }
 		moveable = no
-		orientation = upper_right
+		orientation = lower_right
 
 		OverlappingElementsBoxType = {
 			name = "box"
-			position = { x = -860 y = 35 }
+			position = { x = -656 y = -30 }
 			size = { x = 445 y = 100 }
 			format = right
 			spacing = 10
